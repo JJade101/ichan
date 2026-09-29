@@ -1,0 +1,325 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ITZ_CHANNEL | Technology × Education</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <header class="nav">
+      <a href="#home" class="brand" data-scroll>
+        ITZ_CHANNEL<span class="cursor">_</span>
+      </a>
+
+      <nav id="navLinks" class="nav-links">
+        <a href="#home" data-scroll>HOME</a>
+        <a href="#video" data-scroll>VIDEO</a>
+        <a href="#about" data-scroll>ABOUT</a>
+        <a href="#technology" data-scroll>TECHNOLOGY</a>
+      </nav>
+
+      <div class="status"><i class="dot"></i> SYSTEM ONLINE</div>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="hero-left reveal">
+          <p class="label">SYSTEM / LEARNING / TECHNOLOGY</p>
+
+          <p class="welcome">WELCOME TO THE DIGITAL SPACE</p>
+
+          <h1>ITZ_CHANNEL</h1>
+
+          <p class="tagline">Technology × Education</p>
+
+          <p class="lead">
+            Exploring how technology continues to influence learning,
+            communication, creativity, and education.
+          </p>
+
+          <div class="btn-row">
+            <button class="btn primary" data-target="#video">
+              EXPLORE VIDEO
+            </button>
+
+            <button class="btn" data-target="#about">ABOUT ITZ_CHANNEL</button>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="panel term">
+            <div class="panel-bar">
+              <i></i>
+              <i></i>
+              <i></i>
+              <span class="label">itz_channel@lab ~ status</span>
+            </div>
+
+            <div class="panel-body">
+              <p class="label">SYSTEM STATUS</p>
+
+              <ul class="checks" id="heroChecks">
+                <li data-state="PROCESSING...">
+                  <span>PROCESSING...</span>
+                  <b></b>
+                </li>
+
+                <li data-state="LEARNING">
+                  <span>LEARNING</span>
+                  <b></b>
+                </li>
+
+                <li data-state="CONNECTED">
+                  <span>CONNECTED</span>
+                  <b></b>
+                </li>
+
+                <li data-state="READY">
+                  <span>READY</span>
+                  <b></b>
+                </li>
+              </ul>
+
+              <div class="meters">
+                <div>
+                  <span class="label">SIGNAL</span>
+                  <div class="bar">
+                    <em style="--w: 82%"></em>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="label">KNOWLEDGE</span>
+                  <div class="bar">
+                    <em style="--w: 64%"></em>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="label">CREATIVITY</span>
+                  <div class="bar">
+                    <em style="--w: 91%"></em>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pixels" id="pixels" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="chip c-a label">EDU.v2026</div>
+
+          <div class="chip c-b label"><i class="dot"></i> LIVE</div>
+        </div>
+      </section>
+
+      <!-- VIDEO -->
+      <section id="video" class="section">
+        <div class="wrap reveal">
+          <h2><span class="num">01 /</span> TECHNOLOGY VIDEO</h2>
+
+          <p class="sub">WATCH • LEARN • EXPLORE</p>
+
+          <div class="panel player">
+            <div class="panel-bar">
+              <i></i>
+              <i></i>
+              <i></i>
+
+              <span class="label">MEDIA PLAYER</span>
+
+              <span class="label meta">
+                STATUS: <b id="vStatus">READY</b>
+              </span>
+
+              <span class="label meta hide-sm">
+                FILE: technology-video.mp4
+              </span>
+            </div>
+
+            <div class="screen">
+              <video id="vid" controls preload="metadata">
+                <source src="ichan.mp4" type="video/mp4" />
+
+                Your browser does not support the video tag.
+              </video>
+
+              <div class="placeholder" id="placeholder">
+                <div class="play">&#9654;</div>
+
+                <p class="label">NO FILE LOADED</p>
+
+                <p>Add <code>technology-video.mp4</code> to this folder.</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="caption">
+            An exploration of technology and its role in modern learning and
+            everyday life.
+          </p>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="wrap reveal">
+          <h2><span class="num">02 /</span> ABOUT</h2>
+
+          <div class="two-col">
+            <div>
+              <p class="big-name">ITZ_CHANNEL</p>
+
+              <p class="lead">
+                ITZ_CHANNEL is a Bachelor of Elementary Education student
+                exploring the connection between technology and modern
+                education.
+              </p>
+            </div>
+
+            <div class="panel profile">
+              <div class="panel-bar">
+                <i></i>
+                <i></i>
+                <i></i>
+
+                <span class="label">STUDENT PROFILE</span>
+              </div>
+
+              <dl>
+                <div>
+                  <dt class="label">COURSE</dt>
+                  <dd>BEEd</dd>
+                </div>
+
+                <div>
+                  <dt class="label">INTEREST</dt>
+                  <dd>TECHNOLOGY</dd>
+                </div>
+
+                <div>
+                  <dt class="label">FOCUS</dt>
+                  <dd>EDUCATION</dd>
+                </div>
+
+                <div>
+                  <dt class="label">STATUS</dt>
+                  <dd><i class="dot"></i> ACTIVE</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGY -->
+      <section id="technology" class="section">
+        <div class="wrap reveal">
+          <h2><span class="num">03 /</span> TECHNOLOGY + EDUCATION</h2>
+
+          <div class="modules">
+            <article class="panel module">
+              <span class="idx label">01</span>
+
+              <div class="glyph g1" aria-hidden="true"></div>
+
+              <h3>DIGITAL LEARNING</h3>
+
+              <p>
+                Digital tools give students new ways to access information and
+                educational resources.
+              </p>
+            </article>
+
+            <article class="panel module">
+              <span class="idx label">02</span>
+
+              <div class="glyph g2" aria-hidden="true"></div>
+
+              <h3>SMART TOOLS</h3>
+
+              <p>
+                Interactive tools support teachers and students in learning,
+                creating, and connecting.
+              </p>
+            </article>
+
+            <article class="panel module">
+              <span class="idx label">03</span>
+
+              <div class="glyph g3" aria-hidden="true"></div>
+
+              <h3>FUTURE CLASSROOM</h3>
+
+              <p>
+                Technology continues to shape how classrooms and education will
+                develop.
+              </p>
+            </article>
+          </div>
+
+          <!-- RUN SYSTEM -->
+          <div class="panel console">
+            <div class="panel-bar">
+              <i></i>
+              <i></i>
+              <i></i>
+              <span class="label">TERMINAL</span>
+            </div>
+
+            <div class="console-body">
+              <pre
+                id="log"
+                aria-live="polite"
+              >&gt; awaiting command<span class="cursor">_</span></pre>
+
+              <div class="progress">
+                <em id="progress"></em>
+              </div>
+
+              <p class="welcome-msg" id="welcomeMsg">
+                WELCOME TO ITZ_CHANNEL'S DIGITAL SPACE.
+              </p>
+
+              <button class="btn primary" id="runBtn">RUN SYSTEM</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="wrap foot">
+        <div>
+          <p class="foot-name">ITZ_CHANNEL</p>
+
+          <p class="label">BEEd | Technology &amp; Education</p>
+        </div>
+
+        <div class="foot-r label">
+          <p><i class="dot"></i> SYSTEM STATUS: ONLINE</p>
+
+          <p>© 2026 ITZ_CHANNEL</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
